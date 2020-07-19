@@ -69,7 +69,6 @@ class Mine extends Component {
                 </div>
                 <div className="common-func">
                     <h3>常用功能</h3>
-
                     <div className="common-func-wrapper">
                         <div className="common-func-item">
                             <svg className="icon" aria-hidden="true">
@@ -135,7 +134,55 @@ class Mine extends Component {
                     </div>
                 </div>
                 <div className="white-line"></div>
-
+                <div className="recommend">
+                    <h3>为你推荐</h3>
+                    <div className="recommend-banner">
+                        <img width="100%" height="100%" src="" alt=""/>
+                    </div>
+                    <div className="recommend-items">
+                        <div className="recommend-item">
+                            <div className="car-img-wrapper">
+                                <img width="100%" height="100%"src={require('../../assets/img/car1.jpg')} alt=""/>
+                            </div>
+                            <div className="car-info">
+                                <span className="car-name">别克 君越 2018款 20T 豪华型</span>
+                                <span className="car-desc">2019年 / 1.68万公里</span>
+                                <span className="car-price">16.68万</span>
+                            </div>
+                        </div>
+                        <div className="recommend-item">
+                            <div className="car-img-wrapper">
+                                <img width="100%" height="100%"src={require('../../assets/img/car1.jpg')} alt=""/>
+                            </div>
+                            <div className="car-info">
+                                <span className="car-name">别克 君越 2018款 20T 豪华型</span>
+                                <span className="car-desc">2019年 / 1.68万公里</span>
+                                <span className="car-price">16.68万</span>
+                            </div>
+                        </div>
+                        <div className="recommend-item">
+                            <div className="car-img-wrapper">
+                                <img width="100%" height="100%"src={require('../../assets/img/car1.jpg')} alt=""/>
+                            </div>
+                            <div className="car-info">
+                                <span className="car-name">别克 君越 2018款 20T 豪华型</span>
+                                <span className="car-desc">2019年 / 1.68万公里</span>
+                                <span className="car-price">16.68万</span>
+                            </div>
+                        </div>
+                        <div className="recommend-item">
+                            <div className="car-img-wrapper">
+                                <img width="100%" height="100%"src={require('../../assets/img/car1.jpg')} alt=""/>
+                            </div>
+                            <div className="car-info">
+                                <span className="car-name">大众 迈腾 2019款 330TSI DSG领先型 国VI</span>
+                                <span className="car-desc">2019年 / 1.68万公里</span>
+                                <span className="car-price">16.68万</span>
+                            </div>
+                            {/* <div className="line">ddd</div> */}
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

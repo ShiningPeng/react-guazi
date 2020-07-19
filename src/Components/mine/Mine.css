@@ -1,18 +1,20 @@
 .setting {
     width: 100%;
-    height: 30px;
+    height: 40px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background-color: red;
 }
 
 .phone-and-button {
     height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .mine-phone {
@@ -79,7 +81,7 @@
 }
 
 .text {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .white-line {
@@ -94,27 +96,31 @@
     justify-content: center;
     align-items: center;
     background-color: #f5f8fa;
-    margin: 0 10px;
+    margin: 10px 10px;
     height: 60px;
 }
 
 .myshare-item {
     flex: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .origine-color {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     color: #ff6f40;
 }
 
 .word {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 15px;
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 10px;
@@ -125,7 +131,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
@@ -139,3 +145,65 @@ h3 {
     align-items: center;
     flex-direction: column;
 }
+/* .recommend {
+    
+} */
+.recommend-items {
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.recommend-item {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+}
+.car-img-wrapper {
+    width: 130px;
+    height: 90px;
+}
+.car-img-wrapper img {
+    border-radius: 3px;
+}
+.car-info {
+    flex: 1;
+    margin-left: 10px;
+}
+.car-desc {
+    font-size: 11px;
+    display: block;
+    margin-bottom: 3px;
+}
+.car-name {
+    display: block;
+    height: 50px;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+.car-price {
+    font-size: 14px;
+    display: block;
+    color: #ff6f40;
+}
+/* .line {
+    position:relative;
+}
+.line:before{
+
+    content: "";
+    display: block; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #d9d9d9;
+    top: 0;
+    border-top: 1px solid #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+} */
