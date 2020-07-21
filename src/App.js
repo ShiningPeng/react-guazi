@@ -1,13 +1,16 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-import Mine from './Components/mine/Mine'
+import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Home from './components/home/Home'
+import SellCars from './components/sellingCars/SellCars'
+import BuyCars from './components/buyCars/BuyCars'
+import Message from './components/message/Message'
+import Mine from './components/mine/Mine.jsx'
+
 
 function App() {
   return (
-    <div className="App">
-      <Mine></Mine>
-    </div>
+    <Mine/>
   );
 }
 
