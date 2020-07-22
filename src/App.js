@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from './components/home/Home'
-import SellCars from './components/sellingCars/SellCars'
-import BuyCars from './components/buyCars/BuyCars'
-import Message from './components/message/Message'
-import Mine from './components/mine/Mine.jsx'
+import Home from './pages/home/Home'
+import SellCars from './pages/sellingCars/SellCars'
+import BuyCars from './pages/buyCars/BuyCars'
+import Message from './pages/message/Message'
+import Mine from './pages/mine/Mine.jsx'
 
 
 function App() {

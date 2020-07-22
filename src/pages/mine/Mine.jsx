@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import './Mine.css'
+import './Mine.css';
+import CarItem from '../../components/carItem/CarItem';
+import axios from 'axios'
 
 class Mine extends Component {
     constructor(props) {
         super(props)
+        console.log('constructor')
         this.state = {
             phone: '15179774911',
             cartNum: 12,
@@ -11,6 +14,7 @@ class Mine extends Component {
             dingyueNum: 458,
             scanNum: 789,
             couponNum: 6,
+            carStr:'',
             carList: [
                 {
                     carImgUrl: require('../../assets/img/car1.jpg'),
@@ -60,7 +64,35 @@ class Mine extends Component {
             ]
         }
     }
+
+    getCarlist() {
+        console.log('getcarlist')
+        axios.post('http://mock-api.com/RzJZr1z9.mock/mine/carlist')
+            .then((res) => {
+                // console.log('-------000000000',this.state.carList );
+                console.log('res', res)
+                this.setState({
+                    carStr: res.data
+                })
+                // console.log('-------111111111',this.state.carList );
+
+            })
+            .catch((error) => {
+                console.log('error-----', error);
+                // _this.setState({
+                //     isLoaded: false,
+                //     error: error
+                // })
+            })
+    }
+    //当组件输出到 DOM 后会执行 componentDidMount()
+    componentDidMount() {
+        // const _this = this;    //先存一下this，以防使用箭头函数this会指向我们不希望它所指向的对象。
+        // this.getCarlist();
+    }
     render() {
+        let { carList } = this.state;
+
         return (
             <div className="mine">
                 <header className="mine-header">
@@ -204,21 +236,17 @@ class Mine extends Component {
                         <img width="100%" height="100%" src="" alt="" />
                     </div>
                     <div className="mine-recommend-items">
-                        {this.state.carList.map((item, index) => {
-                            return (
-                                <div className="mine-recommend-item" key={index + item}>
-                                    <div className="mine-recommend-item__img">
-                                        <img width="100%" height="100%" src={item.carImgUrl} alt="" />
-                                    </div>
-                                    <div className="mine-recommend-item__info">
-                                        <span className="mine-recommend-item__name">{item.carName}</span>
-                                        <span className="mine-recommend-item__desc">{item.carDesc.carYear}年 / {item.carDesc.carDistance}万公里</span>
-                                        <span className="mine-recommend-item__price">{item.carPrice}万</span>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                        {/* <div className="line">ddd</div> */}
+                        {
+                            carList.map((item, index) => {
+                                return (
+                                    <CarItem
+                                        item={item}
+                                        index={index}
+                                        key={index + item}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
