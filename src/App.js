@@ -10,7 +10,13 @@ import Mine from './pages/mine/Mine.jsx'
 
 function App() {
   return (
-    <Mine/>
+    <Router>
+      <Route path="/mine" component={Mine}/>
+      <Route path="/message" component={Message}/>
+      <Route path="/buy" component={BuyCars}/>
+
+    </Router>
+    
   );
 }
 

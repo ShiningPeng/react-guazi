@@ -7,7 +7,7 @@ class CarItem extends Component {
         this.state = {}
     }
     render() {
-        const {carImgUrl, carName, carDesc, carPrice } = this.props.item;
+        const { carImgUrl, carName, carDesc, carPrice } = this.props.item;
         return (
             <div className="car-item" >
                 <div className="car-item__img">

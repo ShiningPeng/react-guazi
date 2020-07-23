@@ -150,8 +150,8 @@ class Mine extends Component {
                 <div className="mine-myshare">
                     <h3>我的专享</h3>
                     <div className="mine-myshare-content">
-                        <div className="coupon mine-myshare-item">
-                            <span className="origine-color">{this.state.couponNum}张</span>
+                        <div className=" mine-myshare-item">
+                            <span className="origine-color coupon">{this.state.couponNum}</span>
                             <span className="mine-word">优惠券</span>
                         </div>
                         <div className="test mine-myshare-item">
