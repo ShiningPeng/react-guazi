@@ -1,8 +1,45 @@
+.buycar-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 44px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.buycar-nav-item {
+    width: 25%;
+    text-align: center;
+}
+.active {
+    color: red;
+  }
+.buycar-navcontent {
+    /* margin-top: 20px; */
+    height: 100vh;
+  overflow-y: scroll;
+    /* flex:1;
+    height: 100vh;
+    overflow-y: scroll; */
+}
+.buycar-carinfo {
+    height: 600px;
+    background-color: green;
+}
 .buycar-carcheck {
     width: 100%;
+    /* height: 500px; */
     margin-top: .625rem /* 10/16 */;
     padding: 0 1.25rem /* 20/16 */;
     box-sizing: border-box;
+}
+.buycar-service {
+    height: 400px;
+    background-color: aqua;
+}
+.buycar-recommend {
+    height: 1000px;
+    background-color: blue;
 }
 .buycar-carcheck-title{
     font-size: 1rem /* 16/16 */;
@@ -26,6 +63,7 @@
     padding: .625rem 0;
     display: flex;
     align-items: center ;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 .buycar-carcheck-master__avatar {
@@ -36,8 +74,11 @@
 .buycar-carcheck-master__avatar > img {
     border-radius: 1.5625rem /* 25/16 */;
 }
-.buycar-carcheck-master__name {
+.buycar-carcheck-master-info {
     flex: 1;
+
+}
+.buycar-carcheck-master__name {
 }
 .buycar-carcheck-master__desc  {
     font-size: .75rem;
@@ -59,4 +100,99 @@
 button {
     height: 1.875rem /* 30/16 */;
     border-radius: .1875rem /* 3/16 */;
+}
+.buycar-carcheck-checkresult {
+    border-radius: 3px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px 2px #f5f5f5;
+    font-size: 12px;
+}
+.buycar-carcheck-checkresult-text {
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.buycar-carcheck-checkresult-link {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-top: 1px solid #f5f5f5;
+}
+.buycar-carcheck-detail {
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 14px;
+}
+.buycar-carcheck-detail-tab {
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+.buycar-carcheck-check-wrap {
+    width: 100%;
+    box-shadow: 0 0 3px 3px #f5f5f5;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.buycar-carcheck-check-top {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #eef9ee;
+    color: #303740;
+    border: 1px solid #dcedde;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+}
+.buycar-carcheck-check-shigupaicha {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+.buycar-carcheck-check-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bold;
+
+}
+.buycar-carcheck-check-item {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.buycar-carcheck-check-item > span {
+    display: block;
+    margin-bottom: 5px;
+}
+.buycar-carcheck-check-item:nth-child(2n) {
+    border-top: 1px solid #f5f5f5;
+}
+.buycar-carcheck-check-item:nth-child(2n+1) {
+    border-top: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+.buycar-carcheck-report-link {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+
 }
