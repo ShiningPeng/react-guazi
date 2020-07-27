@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 1.173333rem /* 44/37.5 *//* 44/16 */ /* 44/16 */;
+    height: 1.173333rem /* 44/37.5 */;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,12 +14,12 @@ header {
 }
 .mine-setting {
     flex: 1;
-    font-size: .266667rem /* 10/37.5 */ /* 10/16 */ /* 10/16 */;
+    font-size: .266667rem /* 10/37.5 */ ;
 } 
 
 
 .mine-phone-button {
-    height: 1.333333rem /* 50/37.5 */ /* 50/16 */;
+    height: 1.333333rem /* 50/37.5 */;
     width: 100%;
     display: flex;
     align-items: center;
@@ -30,21 +30,21 @@ header {
 .mine-phone {
     flex: 3;
     text-align: left;
-    font-size: .453333rem /* 17/37.5 */ /* 17/16 */;
+    font-size: .453333rem /* 17/37.5 */;
     display: inline-block;
-    height: 1.333333rem /* 50/37.5 */ /* 50/16 */;
-    line-height: 1.333333rem /* 50/37.5 */ /* 50/16 */;
-    padding-left: 1.333333rem /* 50/37.5 */ /* 10/16 */;
+    height: 1.333333rem /* 50/37.5 */ ;
+    line-height: 1.333333rem /* 50/37.5 */;
+    padding-left: .266667rem /* 10/37.5 */;
 }
 
 .mine-button {
     flex: 1.5;
-    height: .8rem /* 30/37.5 */ /* 30/16 */;
+    height: .8rem /* 30/37.5 */;
     display: inline-block;
-    font-size: .373333rem /* 14/37.5 */ /* 14/16 */;
+    font-size: .373333rem /* 14/37.5 */;
     text-align: center;
-    padding: 0 .133333rem /* 5/37.5 */ /* 5/16 */;
-    line-height: .8rem /* 30/37.5 */ /* 30/16 */;
+    padding: 0 .133333rem /* 5/37.5 */;
+    line-height: .8rem /* 30/37.5 */;
     color: #fff;
     background-color: #5f666f;
     box-sizing: border-box;
@@ -61,10 +61,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .373333rem /* 14/37.5 */ /* 14/16 */;
-    margin-top: .266667rem /* 10/37.5 */ /* 10/16 */;
+    font-size: .373333rem /* 14/37.5 */;
+    margin-top: .266667rem /* 10/37.5 */;
     width: 100%;
-    height: 1.6rem /* 60/37.5 */ /* 60/16 */;
+    height: 1.6rem /* 60/37.5 */;
     text-align: center;
 }
 
@@ -80,8 +80,8 @@ header {
 
 .mine-item-num {
     font-weight: bold;
-    font-size: .426667rem /* 16/37.5 */ /* 16/16 */;
-    margin-bottom: .133333rem /* 5/37.5 */ /* 5/16 */;
+    font-size: .426667rem /* 16/37.5 */;
+    margin-bottom: .133333rem /* 5/37.5 */;
 }
 
 .mine-icon {
@@ -92,13 +92,13 @@ header {
 }
 
 .mine-text {
-    font-size: .346667rem /* 13/37.5 */ /* 13/16 */;
+    font-size: .346667rem /* 13/37.5 */;
 }
 
 .white-line {
     width: 100%;
-    height: .133333rem /* 5/37.5 */ /* 5/16 */;
-    margin: .266667rem /* 10/37.5 *//* 10/16 */ 0;
+    height: .133333rem /* 5/37.5 */;
+    margin: .266667rem /* 10/37.5 */0;
     background-color: #f5f8fa;
 }
 
@@ -107,7 +107,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #f5f8fa;
-    margin: .266667rem /* 10/37.5 */ /* 10/16 */ .266667rem /* 10/37.5 */ /* 10/16 */;
+    margin: .266667rem /* 10/37.5 */ .266667rem /* 10/37.5 */;
     height: 1.6rem /* 60/37.5 */;
 }
 
@@ -122,24 +122,24 @@ header {
 
 .origine-color {
     display: block;
-    font-size: .533333rem /* 20/37.5 */ /* 20/16 */;
+    font-size: .533333rem /* 20/37.5 */;
     color: #ff6f40;
 }
 .coupon::after {
     content: '张';
-    font-size: .32rem /* 12/37.5 */ /* 12/16 */;
-    margin-left: .08rem /* 3/37.5 */ /* 3/16 */;
+    font-size: .32rem /* 12/37.5 */;
+    margin-left: .08rem /* 3/37.5 */;
     /* color: red; */
 }
 .mine-word {
-    font-size: .346667rem /* 13/37.5 */ /* 13/16 */;
+    font-size: .346667rem /* 13/37.5 */;
 }
 
 h3 {
-    font-size: .4rem /* 15/37.5 */ /* 15/16 */;
-    padding-left: .266667rem /* 10/37.5 */ /* 10/16 */;
-    padding-top: .266667rem /* 10/37.5 */ /* 10/16 */;
-    margin-bottom: .266667rem /* 10/37.5 */ /* 10/16 */;
+    font-size: .4rem /* 15/37.5 */;
+    padding-left: .266667rem /* 10/37.5 */;
+    padding-top: .266667rem /* 10/37.5 */;
+    margin-bottom: .266667rem /* 10/37.5 */;
 }
 
 .mine-common-items {
@@ -147,16 +147,16 @@ h3 {
     /* align-items: center; */
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: .346667rem /* 13/37.5 */ /* 13/16 */;
+    font-size: .346667rem /* 13/37.5 */;
     width: 100%;
-    padding: 0 .266667rem /* 10/37.5 */ /* 10/16 */;
+    padding: 0 .266667rem /* 10/37.5 */;
     box-sizing: border-box;
 }
 
 .mine-common-item {
     display: flex;
     width: 25%;
-    height: 1.6rem /* 60/37.5 */ /* 60/16 */;
+    height: 1.6rem /* 60/37.5 */;
     align-items: center;
     flex-direction: column;
 }
@@ -165,12 +165,12 @@ h3 {
 } */
 .mine-recommend-banner {
     width: 100%;
-    height: 2.133333rem /* 80/37.5 */ /* 80/16 */;
-    padding: .266667rem /* 10/37.5 */ /* 10/16 */;
+    height: 2.133333rem /* 80/37.5 */;
+    padding: .266667rem /* 10/37.5 */;
     box-sizing: border-box;
 }
 .mine-recommend-items {
-    padding: 0 .266667rem /* 10/37.5 */ /* 10/16 */;
+    padding: 0 .266667rem /* 10/37.5 */;
     box-sizing: border-box;
     width: 100%;
 }

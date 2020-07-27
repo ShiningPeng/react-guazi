@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Mine.css';
-import CarItem from '../../components/carItem/CarItem';
-import axios from 'axios'
+import CarItem from '../../common/carItem/CarItem';
+// import axios from 'axios'
 
 class Mine extends Component {
     constructor(props) {
@@ -65,26 +65,26 @@ class Mine extends Component {
         }
     }
 
-    getCarlist() {
-        console.log('getcarlist')
-        axios.post('http://mock-api.com/RzJZr1z9.mock/mine/carlist')
-            .then((res) => {
-                // console.log('-------000000000',this.state.carList );
-                console.log('res', res)
-                this.setState({
-                    carStr: res.data
-                })
-                // console.log('-------111111111',this.state.carList );
+    // getCarlist() {
+    //     console.log('getcarlist')
+    //     axios.post('http://mock-api.com/RzJZr1z9.mock/mine/carlist')
+    //         .then((res) => {
+    //             // console.log('-------000000000',this.state.carList );
+    //             console.log('res', res)
+    //             this.setState({
+    //                 carStr: res.data
+    //             })
+    //             // console.log('-------111111111',this.state.carList );
 
-            })
-            .catch((error) => {
-                console.log('error-----', error);
-                // _this.setState({
-                //     isLoaded: false,
-                //     error: error
-                // })
-            })
-    }
+    //         })
+    //         .catch((error) => {
+    //             console.log('error-----', error);
+    //             // _this.setState({
+    //             //     isLoaded: false,
+    //             //     error: error
+    //             // })
+    //         })
+    // }
     //当组件输出到 DOM 后会执行 componentDidMount()
     componentDidMount() {
         // const _this = this;    //先存一下this，以防使用箭头函数this会指向我们不希望它所指向的对象。
