@@ -28,7 +28,7 @@ export default [{
                 component:BuyCars
             },
             {
-                path:'/sell',
+                path:'/sell/',
                 component:SellCars
             },            
             {

@@ -1,94 +1,47 @@
 import React, { Component } from 'react';
 import './Mine.css';
 import CarItem from '../../common/carItem/CarItem';
-// import axios from 'axios'
+import store from './store';
+import { getMineNumbers, getMineCarList } from './store/actionCreators';
+import axios from 'axios'
 
 class Mine extends Component {
     constructor(props) {
         super(props)
-        console.log('constructor')
-        this.state = {
-            phone: '15179774911',
-            cartNum: 12,
-            compareNum: 36,
-            dingyueNum: 458,
-            scanNum: 789,
-            couponNum: 6,
-            carStr:'',
-            carList: [
-                {
-                    carImgUrl: require('../../assets/img/car1.jpg'),
-                    carName: '别克 君越 2018款 20T 豪华型',
-                    carDesc: {
-                        carYear: '2018',
-                        carDistance: '1.6'
-                    },
-                    carPrice: 12.8
-                },
-                {
-                    carImgUrl: require('../../assets/img/car1.jpg'),
-                    carName: '本田 思域 2016款 220TURBOCTV豪华型',
-                    carDesc: {
-                        carYear: '2019',
-                        carDistance: '1.75'
-                    },
-                    carPrice: 12.20
-                },
-                {
-                    carImgUrl: require('../../assets/img/car1.jpg'),
-                    carName: 'Smart smart fortwo 2016款 1.0L 52千瓦敞篷激情版',
-                    carDesc: {
-                        carYear: '2017',
-                        carDistance: '2.92'
-                    },
-                    carPrice: 12.50
-                },
-                {
-                    carImgUrl: require('../../assets/img/car1.jpg'),
-                    carName: '马自达 阿特兹 2020款 2.5L 蓝天运动版',
-                    carDesc: {
-                        carYear: '2020',
-                        carDistance: '0.02'
-                    },
-                    carPrice: 17.48
-                },
-                {
-                    carImgUrl: require('../../assets/img/car1.jpg'),
-                    carName: '大众 高尔夫 2018款 230TSI 自动豪华型',
-                    carDesc: {
-                        carYear: '2018',
-                        carDistance: '2.03'
-                    },
-                    carPrice: 12.20
-                }
-            ]
-        }
+        // console.log('constructor')
+        this.state = store.getState()
+        this.storeChange = this.storeChange.bind(this)
+        store.subscribe(this.storeChange)
     }
 
-    // getCarlist() {
-    //     console.log('getcarlist')
-    //     axios.post('http://mock-api.com/RzJZr1z9.mock/mine/carlist')
-    //         .then((res) => {
-    //             // console.log('-------000000000',this.state.carList );
-    //             console.log('res', res)
-    //             this.setState({
-    //                 carStr: res.data
-    //             })
-    //             // console.log('-------111111111',this.state.carList );
 
-    //         })
-    //         .catch((error) => {
-    //             console.log('error-----', error);
-    //             // _this.setState({
-    //             //     isLoaded: false,
-    //             //     error: error
-    //             // })
-    //         })
-    // }
+    getCarlist() {
+        console.log('getcarlist')
+        axios.post('http://mock-api.com/RzJZr1z9.mock/mine/carlist')
+            .then((res) => {
+                // console.log('-------000000000',this.state.carList );
+                console.log('res', res.data)
+                
+
+            })
+            .catch((error) => {
+                console.log('error-----', error);
+               
+            })
+    }
     //当组件输出到 DOM 后会执行 componentDidMount()
+
+    storeChange() {
+        this.setState(store.getState())
+    }
+
     componentDidMount() {
         // const _this = this;    //先存一下this，以防使用箭头函数this会指向我们不希望它所指向的对象。
         // this.getCarlist();
+        const action = getMineNumbers()
+        const action1 = getMineCarList()
+        store.dispatch(action1)
+        store.dispatch(action)
     }
     render() {
         let { carList } = this.state;

@@ -73,7 +73,7 @@ const Home = () => {
                 <div className="swiper-nav-container">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
-                            <ul class="nav-con">
+                            <ul className="nav-con">
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image.guazistatic.com/gz01180305/12/20/96b37dbb3b487c72f79aafaed490a97a.png@base@tag=imgScale')" }}>二手车</Link></li>
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image.guazistatic.com/gz01180305/12/21/12fb30f1f90191d85b8b363b77fb2f88.png@base@tag=imgScale')" }} >严选车</Link></li>
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image1.guazistatic.com/qn19043010522775b65e5487c657695d90d46d3c7f5758.png?imageView2/2')" }}>全国购</Link></li>
